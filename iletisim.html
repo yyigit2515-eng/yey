@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WXH46BHP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+    <title>İletişim - Kişisel Portfolyo</title>
+    <!-- Font Awesome İkonları için -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color:#16221e;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Header / Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #ffffff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo {
+            background-color: #00b894;
+            color: #121212;
+            padding: 6px 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: #00b894;
+        }
+
+        /* İletişim Ana Bölüm */
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 150px 50px 80px 50px;
+            min-height: 100vh;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #00b894;
+            color: #121212;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact-header h1 {
+            font-size: 38px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        /* Sol Taraf: İletişim Bilgileri */
+        .contact-info-side {
+            flex: 1;
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+        }
+
+        .contact-info-side h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .contact-info-side p {
+            color: #aaa;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .info-list {
+            list-style: none;
+            margin-bottom: 35px;
+        }
+
+        .info-list li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #ccc;
+            font-size: 15px;
+        }
+
+        .info-list li i {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: #121212;
+            color: #00b894;
+            border-radius: 50%;
+            border: 1px solid #333;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 38px;
+            height: 38px;
+            background-color: #121212;
+            color: #fff;
+            border-radius: 50%;
+            border: 1px solid #333;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: #00b894;
+            color: #121212;
+            border-color: #00b894;
+        }
+
+        /* Sağ Taraf: Mesaj Formu */
+        .contact-form-side {
+            flex: 1.2;
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: #121212;
+            border: 1px solid #333;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #00b894;
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            height: 130px;
+        }
+
+        .btn-submit {
+            background-color: #00b894;
+            color: #121212;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background-color: #019875;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+            .page-container {
+                padding: 120px 20px 50px 20px;
+            }
+            nav {
+                display: none;
+            }
+            header {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Menü -->
+    <header>
+        <a href="index.html" class="logo">YEY</a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Anasayfa</a></li>
+                <li><a href="Hakkimda.html">Hakkımda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- İletişim Sayfası İçeriği -->
+    <div class="page-container">
+        <div class="contact-header">
+            <span class="badge">Bağlantıda Kalın</span>
+            <h1>İletişime Geçin</h1>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Sol Bilgi Alanı -->
+            <div class="contact-info-side">
+                <h3>İletişim Bilgileri</h3>
+                <p>Sorularınız, projeleriniz veya iş birliği teklifleri için benimle aşağıdaki kanallar üzerinden iletişime geçebilirsiniz.</p>
+                
+                <ul class="info-list">
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>yyigit2515@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>05313538075</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Osmangazi/Bursa</span>
+                    </li>
+                </ul>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                </div>
+            </div>
+
+            <!-- Sağ Mesaj Formu -->
+            <div class="contact-form-side">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Adınız Soyadınız</label>
+                        <input type="text" id="name" class="form-control" placeholder="Adınızı girin" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-posta Adresiniz</label>
+                        <input type="email" id="email" class="form-control" placeholder="E-posta adresinizi girin" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Konu</label>
+                        <input type="text" id="subject" class="form-control" placeholder="Mesajınızın konusu">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" class="form-control" placeholder="Mesajınızı buraya yazın..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Mesaj Gönder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

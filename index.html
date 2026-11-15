@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WXH46BHP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+    <title>YUNUS EMRE YİGİT</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #16221e;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Header / Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #ffffff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo {
+            background-color: #00b894;
+            color: #16221e;
+            padding: 6px 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: #00b894;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0 100px;
+            margin-top: 60px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #00b894;
+            color: #121212;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .hero-content h3 {
+            font-size: 24px;
+            color: #888;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .contact-info {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .contact-info li {
+            margin-bottom: 12px;
+            color: #aaa;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-info li i {
+            color: #fff;
+            width: 16px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            background-color: #1e1e1e;
+            color: #fff;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: #00b894;
+            color: #121212;
+        }
+
+        /* Hero Image / Frame */
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .image-frame {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            border: 8px solid #2a2a2a;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        }
+
+        .image-frame::before {
+            content: '';
+            position: absolute;
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            border: 2px dashed #444;
+            animation: rotate 20s linear infinite;
+        }
+
+        .image-frame img {
+            width: 290px;
+            height: 290px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+                margin-top: 100px;
+            }
+            .contact-info li {
+                justify-content: center;
+            }
+            .social-icons {
+                justify-content: center;
+            }
+            nav {
+                display: none; 
+            }
+            header {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Menü -->
+    <header>
+        <div class="logo">YEY</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Anasayfa</a></li>
+                <li><a href="Hakkimda.html">Hakkımda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ana İçerik Alanı -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Merhaba, Ben</span>
+            <h1>Yunus Emre YİGİT</h1>
+            <h3>Matematik Ögretmeni ve Yazılım geliştiriçi</h3>
+            
+            <ul class="contact-info">
+                <li><i class="fa-solid fa-envelope"></i> yyigit2515@gmail.com</li>
+                <li><i class="fa-solid fa-phone"></i> 05313538075</li>
+                <li><i class="fa-solid fa-location-dot"></i> Osmangazi/Bursa</li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="image-frame">
+                <!-- Buraya kendi fotoğrafının yolunu ekleyebilirsin -->
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Profil Fotoğrafı">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
